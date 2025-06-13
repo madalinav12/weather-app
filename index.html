@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Aplicație Meteo</h1>
+      <div id="controls">
+        <input type="text" id="city-input" placeholder="București" />
+        <button id="search-btn">Caută</button>
+        <button id="location-btn">Folosește locația</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="loading" class="hidden">Se încarcă...</div>
+      <div id="error" class="hidden"></div>
+
+      <div id="weather-display" class="hidden">
+        <h2 id="city-name">Numele orașului</h2>
+        <p id="temp">Temperatura</p>
+        <p id="description">Descriere: <span id="weather-icon"></span></p>
+        <p id="humidity">Umiditate</p>
+        <p id="wind">Vânt</p>
+        <p id="sunrise">Răsărit</p>
+        <p id="sunset">Apus</p>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
